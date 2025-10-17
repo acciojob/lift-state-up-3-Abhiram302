@@ -1,14 +1,13 @@
-export default function ChildComponent2({ setOption, update }) {
+import React from "react";
+
+export default function ChildComponent2({ selectedOption, handleSelect }) {
   return (
-    <div style={{ backgroundColor: "yellow", padding: "5px" }}>
-      <h3>Child component 2</h3>
-      <button
-        onClick={() => {
-          update("Option 2");
-        }}
-      >
-        Option 2
+    <div>
+      <button onClick={() => handleSelect("Option 2")}>
+        Select Option 2
       </button>
+      {/* optional display to prove state is passed */}
+      {/* <p>Current: {selectedOption}</p> */}
     </div>
   );
 }
