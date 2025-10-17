@@ -1,1 +1,5 @@
-
+.parent{
+    background-color: green;
+    height: 50vh;
+    padding: 10px;
+}
